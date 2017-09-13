@@ -20,7 +20,7 @@ class Instructor::LessonsController < ApplicationController
   end
   
 
-  helpr_method :current_section     # allows use in model
+  helper_method :current_section     # allows use in model
   def current_section
     @current_section ||= Section.find(params[:section_id])
   end
